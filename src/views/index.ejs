@@ -1,12 +1,13 @@
 <%- include('header') %>
-<div class="container"> 
-        <%- include('summary', { account: accounts.savings}) %>
-    <%- include('summary', { account: accounts.checking}) %>
-    <%- include('summary', { account: accounts.credit}) %>
-    <h1><%= title %></h1>
-    <a href="/profile">Profile</a>
+<div class="container">
+  <br />
+  <%- include('summary', { account: accounts.savings}) %> <br />
+  <%- include('summary', { account: accounts.checking}) %> <br />
+  <%- include('summary', { account: accounts.credit}) %>
+  <h1><%= title %></h1>
+  <a href="/profile">Profile</a>
 </div>
 
-<br><a href="/transfer">Transfer</a>
+<br /><a href="/transfer">Transfer</a>
 
 <%- include('footer') %>
